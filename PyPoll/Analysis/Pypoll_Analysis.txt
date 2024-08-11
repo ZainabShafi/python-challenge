@@ -1,0 +1,5 @@
+The candidates are: ['Charles Casper Stockham', 'Diana DeGette', 'Raymon Anthony Doane']
+Total votes cast are: 369711
+The total votes for each candidate are: {'Charles Casper Stockham': 85213, 'Diana DeGette': 272892, 'Raymon Anthony Doane': 11606}
+The percentage of votes each candidate won: {'Charles Casper Stockham': '24.13%', 'Diana DeGette': '73.98%', 'Raymon Anthony Doane': '3.14%'}
+The winner of the election is: Diana DeGette

@@ -28,13 +28,11 @@ with open (csvpath) as csvfile:
         perc_vote_cand[cand] = f"{round(total_votes_cand[cand]/total_votes*100,2)}%"
 
        
-    
+with open('Pypoll_Analysis.txt', 'w') as file:
+    print("The candidates are:",cand_list,file=file)  
+    print("Total votes cast are:",total_votes, file=file)
+    print("The total votes for each candidate are:",total_votes_cand, file=file)
+    print("The percentage of votes each candidate won:",perc_vote_cand, file=file)
+    print("The winner of the election is:", max(total_votes_cand,key=total_votes_cand.get,),file=file)
 
-        
-print("The candidates are:",cand_list)  
-print("Total votes cast are:",total_votes)
-print("The total votes for each candidate are:",total_votes_cand)
-print("The percentage of votes each candidate won:",perc_vote_cand)
-print("The winner of the election is:", max(total_votes_cand,key=total_votes_cand.get))
 
-file = open("Analysis/Pypoll_Analysis.txt", 'w')

@@ -26,7 +26,7 @@ total_net = 0
 # Read CSV file
 #for loop doesn't follow conditions - it'll iterate that many times. 
 #whileloop - map out every outcome. 
-csvpath = ("budget_data.csv")
+csvpath = ("/Users/zainabshafi/Desktop/python-challenge/PyBank/Resources/budget_data.csv")
 with open (csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter= ",")
     header = next(csvreader)
@@ -65,6 +65,9 @@ output = (
 )
           
 print(output)
+
+with open('PyBank_Analysis.txt', 'w') as file:
+    print(output, file=file)
     
         
 
